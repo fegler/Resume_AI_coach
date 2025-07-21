@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: resume_ai_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/sources
+    working_dir: /sources/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  modeling:
+    build:
+      context: ./modeling
+      dockerfile: Dockerfile
+    container_name: resume_ai_model_test
+    volumes:
+      - ./:/sources
+    working_dir: /sources/modeling
+    tty: true # 컨테이너를 실행 상태로 유지

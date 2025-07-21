@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.egg
+*.egg-info/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual env
+.venv/
+env/
+venv/
+ENV/
+
+# Pipenv
+Pipfile.lock
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# VSCode
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Model, Data, Results
+checkpoints/
+outputs/
+runs/
+logs/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.npz
+*.npy
+
+# Environment config
+.env
+.env.*
+
+# Tokenizer / HF cache
+tokenizer_config.json
+special_tokens_map.json
+*.tokenizer
+*.model
+hf_cache/
+cache/

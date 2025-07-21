@@ -1,0 +1,5 @@
+easyocr
+transformers
+accelerate
+Pillow
+opencv-python

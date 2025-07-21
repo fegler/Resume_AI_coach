@@ -1,0 +1,8 @@
+easyocr
+transformers
+accelerate
+fastapi
+uvicorn
+Pillow
+python-multipart
+httpx
