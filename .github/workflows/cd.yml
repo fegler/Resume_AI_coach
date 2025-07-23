@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to GPU PC
         run: |
-          ssh -p StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} << 'EOF'
             cd ~/project/Resume_AI_coach
             git pull origin main 
             docker-compose down 
